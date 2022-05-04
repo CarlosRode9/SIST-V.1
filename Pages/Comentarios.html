@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <title>Comentarios</title>
+    <!-- CSS Bootstrap v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+        crossorigin="anonymous"
+    />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body class="bg-light">
+<!--  NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-main shadow bg-dark ">
+        <div class="container">
+        <span>SIST</span>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Barra de Navegacion">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+            <div class="nav ms-auto text-light">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="./Nosotros.html" class="nav-link ">Nosotros</a>
+                <a href="./Servicios.html" class="nav-link">Servicios</a>
+                <a href="./Comentarios.html" class="nav-link active">Clientes</a>
+                <a href="./Contacto.html" class="nav-link">Contacto</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="row align-items-center header-main">
+            <div class="col-md-5">
+                <h1 class="display-2">Nuestros Testimonios</h1>
+                <p class="text-muted-fw-ligth text-capitalize">
+                    Hay muchas razones válidas por las que debe elegirnos para cuidar su valioso dispositivo
+                </p>
+                <div class="d-none d-md-block iconos-social">
+                    <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+            
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+            
+                    <a href="https://www.instagram.com/sist_soluciones_informaticas/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="photo-nosotros photo-relaive shadow">
+                <video src="../video/comentarios/comentarios.mp4" class="w-100" autoplay muted="muted" loop></video>
+            </div>
+        </header>
+    </div>
+<!-- Comentarios -->
+    <section class="comentarios ">
+        <img src="../img/customers/cut-header.svg" alt="" class="girar">
+        <div class="container">
+            <div class="row">
+                <!-- imagen del usurio -->
+                <blockquote class="col-12 col-md-12 text-capitalize text-light text-center">
+                    <img src="../img/comentarios/comentario1.jpg" alt="Alice" class="comentario--img">
+                    <!-- comentario -->
+                    <p class="p-4"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facere doloribus recusandae excepturi, quod corporis?
+                    </p>
+                    <!-- Nombre -->
+                    <footer class="blockquote-footer text-white">
+                        <cite>
+                            Alice
+                        </cite>
+
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+        <!-- whatsapp -->
+
+        <a href="https://api.whatsapp.com/send?phone=Tu-nùmero-aquí" class="wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    
+    <!-- JS Bootstrap -->
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+            crossorigin="anonymous"
+    ></script>
+    <!-- JS Main -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

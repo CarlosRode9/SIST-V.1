@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+/**
+ * ----------------------------------------
+ * animation focus-in-contract-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation scale-in-ver-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #e7772c;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+}
+body::-webkit-scrollbar{
+  width: 5px;
+  
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+.linear1{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* nav */
+#mainNav a{
+  color:inherit;
+}
+.container span{
+  text-decoration: none;
+  font-size: 35px;
+  color: #f8f9fa;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  text-shadow: 10px;
+}
+
+.nav-brand img{
+  width: 45px;
+}
+.navbar-main .active{
+  text-decoration: underline  var(--color-gray-medium);
+  text-underline-offset: 9px;
+}
+
+/* Home */
+.iconos-social i{
+  list-style: none;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+}
+.iconos-social i:hover{
+  color: var(--color-purple);
+}
+.row{
+  justify-content: center;
+}
+
+.header-main{
+  min-height: 100vh;
+}
+
+.display-2{
+  font-family: 'Zen Tokyo Zoo', cursive;
+  text-shadow: 10px;
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.article img{
+  width: 30%;
+}
+
+.bg-img1{
+  background-image: url(/img/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.ondas{
+  background-color: #000;
+}
+/* comentarios */
+.comentarios{
+  background-image: url(/img/comentarios/pexels-marek-levak-2265488.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.comentario--img{
+  --tamaño: 80px;
+  width: var(--tamaño);
+  height: var(--tamaño);
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+  border: 3px ridge #fff;
+
+}
+.girar{
+  transform: rotate(0.5turn);
+}
+
+
+/* WSP */
+.wsp{
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px #000;
+  text-shadow: 2px;
+  z-index: 300;
+}
+.wsp i{
+  text-align: center;
+  font-size: 20px;
+}
+.wsp:hover{
+  text-decoration: none;
+  color: #0df053;
+  background-color: white;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+.photo-nosotros{
+  -webkit-animation: scale-in-ver-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-ver-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*   Servicios */
+.list-serv li{
+  list-style: none;
+  text-decoration: none;
+}
